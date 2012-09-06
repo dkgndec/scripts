@@ -1,0 +1,1 @@
+ls foo*.jpg | awk '{print("mv "$1" "$1)}' | sed 's/foo/bar/2'

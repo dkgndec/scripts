@@ -1,0 +1,4 @@
+for file in *.png;
+do echo $file;
+convert $file -resize 300x450 ${file%.*}.eps;
+done
