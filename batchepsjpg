@@ -1,0 +1,12 @@
+for file in *.jpg; 
+do echo $file; 
+convert $file -channel rgba -alpha on -colorspace rgb ${file%.*}.png;
+done;
+for file in *.jpg; 
+do echo $file; 
+convert $file -resize 300x450 ${file%.*}.png;
+done;
+for file in *.jpg; 
+do echo $file; 
+sam2p $file ${file%.*}.eps;
+done

@@ -1,0 +1,13 @@
+cmyk to rgb:
+
+convert cmyk.extension -channel rgba -alpha on -colorspace rgb rgb-image.extension
+
+rgb to cmyk:
+
+convert rgb.extension -channel cmyka -alpha on -colorspace cmyk cmyk-image.extension
+
+for file in *.png; 
+do echo $file; 
+convert $file -channel cmyka -alpha on -colorspace cmyk ${file%.*}.png;
+done
+

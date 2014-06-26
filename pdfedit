@@ -1,0 +1,1 @@
+pdftk input_file.pdf cat pagestart-pageend output output_file.pdf

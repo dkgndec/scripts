@@ -1,0 +1,15 @@
+for file in *.jpg; 
+do echo $file; 
+sam2p $file ${file%.*}.eps; 
+done
+
+for file in *.JPG; 
+do echo $file; 
+sam2p $file ${file%.*}.eps; 
+done
+
+for file in *.png; 
+do echo $file; 
+sam2p $file ${file%.*}.eps; 
+done
+

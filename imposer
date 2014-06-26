@@ -1,0 +1,17 @@
+echo :::::::::::::::::::::::::::::::::::::::::::
+echo Starting Imposition Phase
+echo :::::::::::::::::::::::::::::::::::::::::::
+echo Please Be Patient, Its A Long Long Process
+echo :::::::::::::::::::::::::::::::::::::::::::
+
+pdftk imposeme.pdf cat 1-8 output getimposed1.pdf
+pdftk imposeme.pdf cat 9-16 output getimposed2.pdf
+pdftk imposeme.pdf cat 17-24 output getimposed3.pdf
+pdftk imposeme.pdf cat 25-32 output getimposed4.pdf
+pdftk imposeme.pdf cat 33-40 output getimposed5.pdf
+pdftk imposeme.pdf cat 41-48 output getimposed6.pdf
+pdftk imposeme.pdf cat 49-56 output getimposed7.pdf
+pdftk imposeme.pdf cat 57-64 output getimposed8.pdf
+pdftk imposeme.pdf cat 65-72 output getimposed9.pdf
+pdftk imposeme.pdf cat 73-74 output getimposed10.pdf
+pdftk getimposed10.pdf getimposed11.pdf output getimposed12.pdf
